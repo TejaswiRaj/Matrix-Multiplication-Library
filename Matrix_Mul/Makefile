@@ -9,7 +9,7 @@ CXXFLAGS = -Wall -g
 # ****************************************************
 # Targets needed to bring the executable up to date
 
-main: Matrix.o MyMatrix.o pch.o
+main: Matrix.o MatrixLib.o pch.o
 	$(CXX) $(CXXFLAGS) -o Matrix Matrix.o MatrixLib.o pch.o
 
 # The main.o target can be written more simply
